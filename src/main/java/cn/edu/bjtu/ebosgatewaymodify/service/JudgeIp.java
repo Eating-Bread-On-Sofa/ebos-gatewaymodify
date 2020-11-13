@@ -30,6 +30,7 @@ public class JudgeIp {
         return false;
     }
 
+    //将掩码的"."去点，然后将数字都换算成二进制
     public String getMask(String mask){
         try{
             String[] addrs = mask.split("\\.");
@@ -188,11 +189,17 @@ public class JudgeIp {
         try{
             String[] addrs = ipv6.split(":");
             int length = addrs.length;
-            String[] addr = new String[length];
             StringBuilder result = new StringBuilder();
             for (int index = 0; index < length; index++){
-                addr[index] = Integer.toBinaryString((Integer.parseInt(addrs[index])));
-                result.append(addr[index]);
+                addrs[index] = Integer.toBinaryString((Integer.parseInt(addrs[index],16)));
+                int k = addrs[index].length();
+                if (k < 16) {
+                    int tem = 16-k;
+                    for (int l = 0;l<tem;l++){
+                        addrs[index] = "0" + addrs[index];
+                    }
+                }
+                result.append(addrs[index]);
             }
             int[] temp = new int[num];
             for(int i=0;i<num;i++){
@@ -213,6 +220,4 @@ public class JudgeIp {
         }
         return true;
     }
-
-
 }

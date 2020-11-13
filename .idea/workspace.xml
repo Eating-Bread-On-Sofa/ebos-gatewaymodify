@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cae0392-29f7-49e9-8e49-89bc22dee756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/shell file/ipv4update.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell file/ipv6update.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/Impl/PasswordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/PasswordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/entity/Password.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/service/JudgeIp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/service/JudgeIp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -42,6 +53,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -54,11 +66,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\ebos-gatewaymodify\shell file" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\ebos-ipupdate\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EbosIpUpdateApplication">
+  <component name="RunManager" selected="JUnit.EbosGatewayModifyApplicationTests.checkSameSegment6">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="ebos-gatewaymodify" />
       <working_directory value="$PROJECT_DIR$" />
@@ -78,6 +93,22 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="EbosGatewayModifyApplicationTests.checkSameSegment6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ebos-gatewaymodify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.bjtu.ebosgatewaymodify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.bjtu.ebosgatewaymodify" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.bjtu.ebosgatewaymodify.EbosGatewayModifyApplicationTests" />
+      <option name="METHOD_NAME" value="checkSameSegment6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EbosGatewayModifyApplicationTests.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ebos-gatewaymodify" />
       <extension name="coverage">
@@ -94,6 +125,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EbosGatewayModifyApplicationTests.main1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ebos-gatewaymodify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.bjtu.ebosgatewaymodify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.bjtu.ebosgatewaymodify" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.bjtu.ebosgatewaymodify.EbosGatewayModifyApplicationTests" />
+      <option name="METHOD_NAME" value="main1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EbosGatewayModifyApplicationTests.main2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ebos-gatewaymodify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.edu.bjtu.ebosgatewaymodify.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.edu.bjtu.ebosgatewaymodify" />
+      <option name="MAIN_CLASS_NAME" value="cn.edu.bjtu.ebosgatewaymodify.EbosGatewayModifyApplicationTests" />
+      <option name="METHOD_NAME" value="main2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EbosIpUpdateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ebos-gatewaymodify" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.bjtu.ebosgatewaymodify.EbosGatewayModifyApplication" />
@@ -103,7 +166,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.checkSameSegment6" />
         <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main" />
+        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main1" />
+        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main2" />
       </list>
     </recent_temporary>
   </component>
@@ -126,22 +192,35 @@
       <workItem from="1605228344612" duration="8350000" />
       <workItem from="1605239799554" duration="46000" />
       <workItem from="1605240745751" duration="136000" />
-      <workItem from="1605241483547" duration="238000" />
+      <workItem from="1605241483547" duration="15573000" />
+      <workItem from="1605261007354" duration="10883000" />
     </task>
+    <task id="LOCAL-00001" summary="commit shell file">
+      <created>1605241788823</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605241788823</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit shell file" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit shell file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="883" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1604911460229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604911460229" />
-    <state x="836" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1605229128725">
+    <state x="836" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1605267178338">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="836" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605229128725" />
+    <state x="836" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605267178338" />
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605165062820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -150,50 +229,62 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="851" y="352" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1605161416094" />
+    <state x="370" y="10" key="CommitChangelistDialog2" timestamp="1605241787975">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="370" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605241787975" />
     <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1604827726112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604827726112" />
-    <state width="1493" height="193" key="GridCell.Tab.0.bottom" timestamp="1605240880801">
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1605276926991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="193" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605240880801" />
-    <state width="1493" height="193" key="GridCell.Tab.0.center" timestamp="1605240880801">
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605276926991" />
+    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1605276926991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="193" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605240880801" />
-    <state width="1493" height="193" key="GridCell.Tab.0.left" timestamp="1605240880801">
+    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605276926991" />
+    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1605276926990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="193" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605240880801" />
-    <state width="1493" height="193" key="GridCell.Tab.0.right" timestamp="1605240880801">
+    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605276926990" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1605276926991">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="193" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605240880801" />
-    <state width="1493" height="193" key="GridCell.Tab.1.bottom" timestamp="1605240795026">
+    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605276926991" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605274469010">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="193" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605240795026" />
-    <state width="1493" height="193" key="GridCell.Tab.1.center" timestamp="1605240795026">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605274469010" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605274469010">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="193" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605240795026" />
-    <state width="1493" height="193" key="GridCell.Tab.1.left" timestamp="1605240795026">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605274469010" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605274469010">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="193" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605240795026" />
-    <state width="1493" height="193" key="GridCell.Tab.1.right" timestamp="1605240795026">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605274469010" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605274469010">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="193" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605240795026" />
-    <state x="0" y="0" width="631" height="803" key="dock-window-1" timestamp="1605231698027">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605274469010" />
+    <state x="518" y="125" key="RollbackChangesDialog" timestamp="1605274040431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" width="631" height="803" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1605231698027" />
-    <state x="0" y="0" width="819" height="803" key="dock-window-2" timestamp="1605235292416">
+    <state x="518" y="125" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605274040431" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1605241812840">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" width="819" height="803" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1605235292416" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605241812840" />
+    <state x="0" y="0" width="919" height="795" key="dock-window-1" timestamp="1605272834660">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" width="919" height="795" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1605272834660" />
+    <state x="0" y="0" width="800" height="677" key="dock-window-2" timestamp="1605274459642">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="0" y="0" width="800" height="677" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1605274459642" />
     <state x="252" y="96" width="770" height="714" key="dock-window-3" timestamp="1605169711487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -202,6 +293,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-6" y="0" width="781" height="830" key="dock-window-4/0.0.1536.824@0.0.1536.824" timestamp="1605178210516" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1605246436787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605246436787" />
     <state x="431" y="145" key="search.everywhere.popup" timestamp="1605239723206">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

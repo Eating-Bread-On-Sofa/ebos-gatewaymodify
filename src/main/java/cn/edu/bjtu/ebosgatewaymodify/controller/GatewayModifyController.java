@@ -1,14 +1,16 @@
 package cn.edu.bjtu.ebosgatewaymodify.controller;
 
 import cn.edu.bjtu.ebosgatewaymodify.dao.IpAddressService;
+import cn.edu.bjtu.ebosgatewaymodify.dao.PasswordService;
 import cn.edu.bjtu.ebosgatewaymodify.entity.IpAddress;
+import cn.edu.bjtu.ebosgatewaymodify.entity.Password;
 import cn.edu.bjtu.ebosgatewaymodify.service.JudgeIp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
-@RequestMapping("/api/Ipupdate")
+@RequestMapping("/api/modify")
 @RestController
 public class GatewayModifyController {
 
@@ -16,6 +18,8 @@ public class GatewayModifyController {
     JudgeIp judgeIp;
     @Autowired
     IpAddressService ipAddressService;
+    @Autowired
+    PasswordService passwordService;
 
     @CrossOrigin
     @PostMapping("/ipv4")
@@ -72,14 +76,17 @@ public class GatewayModifyController {
         if (!judgeIp.isValidIpv6Addr(gateway)){
             return "网关地址输入不规范，请重新输入！";
         }
-        if (!judgeIp.checkSameSegment6(ip,gateway,num)){
+        if (!judgeIp.checkSameSegment6(ipv6,gateway,num)){
             return "ip地址和网关不匹配，请重新输入！";
         }
 
         IpAddress data = ipAddressService.find(name);
+        String mask = judgeIp.getMask(data.getNetmask());
+        int num4 = judgeIp.getMaskNum(mask);
+        String ip4 = data.getIp() + "/" + num4;
 
         String command = "";
-        command = "/opt/ipv6update.sh " + name + " " + data.getIp() + " " + ip + " "
+        command = "/opt/ipv6update.sh " + name + " " + ip4 + " " + ip + " "
                 + data.getGateway() + " " + gateway + " " + data.getDns();
         String[] cmdArray = new String[]{"/bin/sh", "-c", command};
         Process process = Runtime.getRuntime().exec(cmdArray);
@@ -90,19 +97,25 @@ public class GatewayModifyController {
 
     @CrossOrigin
     @PostMapping("/password")
-    public String password(String username,String password) throws IOException, InterruptedException {
+    public String password(String username,String oldPassword, String newPassword) throws IOException, InterruptedException {
 
         if (!(username.equals("ebos") || username.equals("root"))){
             return "此用户不存在！";
         }
-
-        String command = "";
-        command = "/opt/password.sh " + username + " " + password ;
-        String[] cmdArray = new String[]{"/bin/sh", "-c", command};
-        Process process = Runtime.getRuntime().exec(cmdArray);
-        process.waitFor();
-        System.out.println("修改完成！");
-        return "修改成功！";
+        Password data = passwordService.find(username);
+        if(!oldPassword.equals(data.getPassword())){
+            return "原密码输入有误，请重新输入！";
+        }else {
+            passwordService.delete(username);
+            passwordService.save(username, newPassword);
+            String command = "";
+            command = "/opt/password.sh " + username + " " + newPassword;
+            String[] cmdArray = new String[]{"/bin/sh", "-c", command};
+            Process process = Runtime.getRuntime().exec(cmdArray);
+            process.waitFor();
+            System.out.println("修改完成！");
+            return "修改成功！";
+        }
     }
 
     @CrossOrigin
