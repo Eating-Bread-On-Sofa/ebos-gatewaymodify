@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cae0392-29f7-49e9-8e49-89bc22dee756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/bjtu/ebosgatewaymodify/dao/Impl/IpAddressServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/bjtu/ebosgatewaymodify/dao/IpAddressService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/bjtu/ebosgatewaymodify/entity/IpAddress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/edu/bjtu/ebosgatewaymodify/service/JudgeIp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplicationTests.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell file/ipv4update.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell file/ipv6update.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +126,7 @@
       <workItem from="1605228344612" duration="8350000" />
       <workItem from="1605239799554" duration="46000" />
       <workItem from="1605240745751" duration="136000" />
+      <workItem from="1605241483547" duration="238000" />
     </task>
     <servers />
   </component>
