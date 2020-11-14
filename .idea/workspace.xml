@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6cae0392-29f7-49e9-8e49-89bc22dee756" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell file/ipv4update.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell file/ipv6update.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell file/password.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="server" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -192,7 +188,7 @@
       <workItem from="1605241483547" duration="15573000" />
       <workItem from="1605261007354" duration="10951000" />
       <workItem from="1605318589991" duration="26000" />
-      <workItem from="1605323038715" duration="3086000" />
+      <workItem from="1605323038715" duration="3563000" />
     </task>
     <task id="LOCAL-00001" summary="commit shell file">
       <created>1605241788823</created>
@@ -208,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605276972009</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update ipv6 checkout">
+      <created>1605337651006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605337651006</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,10 +239,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="851" y="352" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1605161416094" />
-    <state x="370" y="10" key="CommitChangelistDialog2" timestamp="1605276970435">
+    <state x="370" y="10" key="CommitChangelistDialog2" timestamp="1605337649594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="370" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605276970435" />
+    <state x="370" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605337649594" />
     <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1604827726112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -280,10 +283,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="518" y="125" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605274040431" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1605276976035">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1605337708883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605276976035" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605337708883" />
     <state x="0" y="0" width="919" height="795" key="dock-window-1" timestamp="1605272834660">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
