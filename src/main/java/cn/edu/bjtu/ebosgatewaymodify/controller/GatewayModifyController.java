@@ -54,7 +54,8 @@ public class GatewayModifyController {
         String ipAddress = ip + "/" + num;
 
         String command = "";
-        command = "/opt/ipv4update.sh " + name + " " + ipAddress + " " + gateway + " " +dns;
+        command = "/opt/ipv4update.sh " + name + " " + ip +
+                " " + netmask + " " + gateway + " " + ipAddress + " " + dns;
         String[] cmdArray = new String[]{"/bin/sh", "-c", command};
 
         Process process = Runtime.getRuntime().exec(cmdArray);
@@ -86,8 +87,9 @@ public class GatewayModifyController {
         String ip4 = data.getIp() + "/" + num4;
 
         String command = "";
-        command = "/opt/ipv6update.sh " + name + " " + ip4 + " " + ip + " "
-                + data.getGateway() + " " + gateway + " " + data.getDns();
+        command = "/opt/ipv6update.sh " + name + " " + ipv6 + " " + num + " " +
+                 gateway + " " + data.getIp() + " " + data.getNetmask() + " " +
+                 data.getGateway() + " " + ip4 + " " + ip + " " + data.getDns();
         String[] cmdArray = new String[]{"/bin/sh", "-c", command};
         Process process = Runtime.getRuntime().exec(cmdArray);
         process.waitFor();
