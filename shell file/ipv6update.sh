@@ -7,9 +7,8 @@ gateway4=$4
 gateway6=$5
 dns=$6
 
-rm -rf /etc/netplan/50-cloud-init.yaml
 cd /etc/netplan
-touch 50-cloud-init.yaml
+: > 50-cloud-init.yaml
 cat >>50-cloud-init.yaml<< EOF
 # This file is generated from information provided by the datasource.  Changes
 # to it will not persist across an instance reboot.  To disable cloud-init's
