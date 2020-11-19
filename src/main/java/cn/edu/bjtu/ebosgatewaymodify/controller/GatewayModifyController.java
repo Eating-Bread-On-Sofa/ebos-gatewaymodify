@@ -23,15 +23,12 @@ public class GatewayModifyController {
 
     @CrossOrigin
     @PostMapping("/ipv4")
-    public String update(String name,String ip,String netmask,String gateway,String dns) throws IOException, InterruptedException {
+    public String update(String name,String ip,String netmask,String gateway) throws IOException, InterruptedException {
         if (!judgeIp.ipCheck(ip)){
             return "ipv4地址输入不规范，请重新输入！";
         }
         if (!judgeIp.ipCheck(gateway)){
             return "网关地址输入不规范，请重新输入！";
-        }
-        if (!judgeIp.ipCheck(dns)){
-            return "DNS地址输入不规范，请重新输入！";
         }
         String mask = judgeIp.getMask(netmask);
         if (!judgeIp.checkMask(mask)){
@@ -43,10 +40,10 @@ public class GatewayModifyController {
 
         IpAddress data = ipAddressService.find(name);
         if (data == null){
-           ipAddressService.save(name,ip,gateway,netmask,dns);
+           ipAddressService.save(name,ip,gateway,netmask);
         }else {
            ipAddressService.delIp(name);
-           ipAddressService.save(name,ip,gateway,netmask,dns);
+           ipAddressService.save(name,ip,gateway,netmask);
         }
 
         int num = judgeIp.getMaskNum(mask);
@@ -55,7 +52,7 @@ public class GatewayModifyController {
 
         String command = "";
         command = "/opt/ipv4update.sh " + name + " " + ip +
-                " " + netmask + " " + gateway + " " + ipAddress + " " + dns;
+                " " + netmask + " " + gateway + " " + ipAddress;
         String[] cmdArray = new String[]{"/bin/sh", "-c", command};
 
         Process process = Runtime.getRuntime().exec(cmdArray);
@@ -89,7 +86,7 @@ public class GatewayModifyController {
         String command = "";
         command = "/opt/ipv6update.sh " + name + " " + ipv6 + " " + num + " " +
                  gateway + " " + data.getIp() + " " + data.getNetmask() + " " +
-                 data.getGateway() + " " + ip4 + " " + ip + " " + data.getDns();
+                 data.getGateway() + " " + ip4 + " " + ip;
         String[] cmdArray = new String[]{"/bin/sh", "-c", command};
         Process process = Runtime.getRuntime().exec(cmdArray);
         process.waitFor();

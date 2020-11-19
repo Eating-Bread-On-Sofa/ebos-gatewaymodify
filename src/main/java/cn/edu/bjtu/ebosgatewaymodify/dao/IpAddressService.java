@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface IpAddressService {
 
-    void save(String name, String ip, String gateway, String netmask, String dns);
+    void save(String name, String ip, String gateway, String netmask);
     IpAddress find(String name);
     void delIp(String name);
 

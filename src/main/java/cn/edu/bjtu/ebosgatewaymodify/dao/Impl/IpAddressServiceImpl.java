@@ -15,13 +15,12 @@ public class IpAddressServiceImpl implements IpAddressService {
     MongoTemplate mongoTemplate;
 
     @Override
-    public void save(String name,String ip, String gateway, String netmask, String dns) {
+    public void save(String name,String ip, String gateway, String netmask) {
         IpAddress ipAddress = new IpAddress();
         ipAddress.setName(name);
         ipAddress.setIp(ip);
         ipAddress.setGateway(gateway);
         ipAddress.setNetmask(netmask);
-        ipAddress.setDns(dns);
         mongoTemplate.save(ipAddress);
     }
 

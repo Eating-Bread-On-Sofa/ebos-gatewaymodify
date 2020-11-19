@@ -10,7 +10,6 @@ public class IpAddress {
     private String ip;
     private String gateway;
     private String netmask;
-    private String dns;
 
     public String getName() {
         return name;
@@ -44,11 +43,4 @@ public class IpAddress {
         this.netmask = netmask;
     }
 
-    public String getDns() {
-        return dns;
-    }
-
-    public void setDns(String dns) {
-        this.dns = dns;
-    }
 }
