@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cae0392-29f7-49e9-8e49-89bc22dee756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/Impl/PasswordServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/PasswordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/entity/Password.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/ebos-log.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/service/JudgeIp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/service/JudgeIp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="arm" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,12 +44,16 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jzuTIrd35VhSgDWmYAXzS3z4LE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GO_FMT" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -63,17 +64,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\ebos-gatewaymodify\src\main\resources" />
+      <recent name="E:\IdeaProjects\ebos-ipupdate\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\ebos-gatewaymodify\shell file" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IdeaProjects\ebos-ipupdate\src\main\resources" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.EbosGatewayModifyApplicationTests.checkSameSegment6">
+  <component name="RunManager" selected="Spring Boot.EbosIpUpdateApplication">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="ebos-gatewaymodify" />
       <working_directory value="$PROJECT_DIR$" />
@@ -194,6 +199,7 @@
       <workItem from="1605240745751" duration="136000" />
       <workItem from="1605241483547" duration="15573000" />
       <workItem from="1605261007354" duration="10883000" />
+      <workItem from="1605834781534" duration="16411000" />
     </task>
     <task id="LOCAL-00001" summary="commit shell file">
       <created>1605241788823</created>
@@ -209,14 +215,23 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="commit shell file" />
     <option name="LAST_COMMIT_MESSAGE" value="commit shell file" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#Project_Structure" timestamp="1605863574226">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605863574226" />
     <state x="883" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1604911460229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604911460229" />
+    <state x="507" y="221" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605853962950">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="507" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605853962950" />
     <state x="836" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1605267178338">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -229,46 +244,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="851" y="352" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1605161416094" />
-    <state x="370" y="10" key="CommitChangelistDialog2" timestamp="1605241787975">
+    <state x="370" y="10" key="CommitChangelistDialog2" timestamp="1605865483396">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="370" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605241787975" />
+    <state x="370" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605865483396" />
     <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1604827726112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604827726112" />
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1605276926991">
+    <state width="1493" height="89" key="GridCell.Tab.0.bottom" timestamp="1605864919116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605276926991" />
-    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1605276926991">
+    <state width="1493" height="89" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
+    <state width="1493" height="89" key="GridCell.Tab.0.center" timestamp="1605864919116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605276926991" />
-    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1605276926990">
+    <state width="1493" height="89" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
+    <state width="1493" height="89" key="GridCell.Tab.0.left" timestamp="1605864919116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605276926990" />
-    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1605276926991">
+    <state width="1493" height="89" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
+    <state width="1493" height="89" key="GridCell.Tab.0.right" timestamp="1605864919116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605276926991" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605274469010">
+    <state width="1493" height="89" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
+    <state width="1493" height="89" key="GridCell.Tab.1.bottom" timestamp="1605864919116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605274469010" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605274469010">
+    <state width="1493" height="89" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
+    <state width="1493" height="89" key="GridCell.Tab.1.center" timestamp="1605864919116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605274469010" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605274469010">
+    <state width="1493" height="89" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
+    <state width="1493" height="89" key="GridCell.Tab.1.left" timestamp="1605864919116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605274469010" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605274469010">
+    <state width="1493" height="89" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
+    <state width="1493" height="89" key="GridCell.Tab.1.right" timestamp="1605864919116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605274469010" />
+    <state width="1493" height="89" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
     <state x="518" y="125" key="RollbackChangesDialog" timestamp="1605274040431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
