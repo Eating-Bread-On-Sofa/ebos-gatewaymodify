@@ -97,24 +97,33 @@ public class GatewayModifyController {
 
     @CrossOrigin
     @PostMapping("/password")
-    public String password(String username,String oldPassword, String newPassword) throws IOException, InterruptedException {
+    public String password(String username,String oldPassword, String newPassword){
 
-        if (!(username.equals("ebos") || username.equals("root"))){
+        Password data = passwordService.find(username);
+        if (data == null){
             return "此用户不存在！";
         }
-        Password data = passwordService.find(username);
+
         if(!oldPassword.equals(data.getPassword())){
             return "原密码输入有误，请重新输入！";
         }else {
-            passwordService.delete(username);
-            passwordService.save(username, newPassword);
-            String command = "";
-            command = "/opt/password.sh " + username + " " + newPassword;
-            String[] cmdArray = new String[]{"/bin/sh", "-c", command};
-            Process process = Runtime.getRuntime().exec(cmdArray);
-            process.waitFor();
             System.out.println("修改完成！");
-            return "修改成功！";
+            return passwordService.modify(data.getUsername(),newPassword);
+        }
+    }
+
+    @CrossOrigin
+    @PostMapping("/login")
+    public String login(String username,String password){
+        Password data = passwordService.find(username);
+        if (data == null){
+            return "此用户不存在！";
+        }
+        boolean flag = passwordService.login(username,password);
+        if(flag){
+            return "登录成功！";
+        }else {
+            return "密码有误，登录失败！";
         }
     }
 

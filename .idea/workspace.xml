@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cae0392-29f7-49e9-8e49-89bc22dee756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/ebos-log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell file/password.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/Impl/PasswordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/Impl/PasswordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/PasswordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/PasswordService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,10 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.checkSameSegment6" />
-        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main" />
-        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main1" />
         <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main2" />
+        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main1" />
+        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main" />
+        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.checkSameSegment6" />
+        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.checkSameSegment6" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +202,10 @@
       <workItem from="1605241483547" duration="15573000" />
       <workItem from="1605261007354" duration="10883000" />
       <workItem from="1605834781534" duration="16411000" />
+      <workItem from="1606306108723" duration="15000" />
+      <workItem from="1606396136698" duration="56000" />
+      <workItem from="1606549488711" duration="14000" />
+      <workItem from="1606621823666" duration="4824000" />
     </task>
     <task id="LOCAL-00001" summary="commit shell file">
       <created>1605241788823</created>
@@ -232,10 +238,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="507" y="221" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605853962950" />
-    <state x="836" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1605267178338">
+    <state x="836" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1606625188068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="836" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605267178338" />
+    <state x="836" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606625188068" />
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605165062820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -252,38 +258,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604827726112" />
-    <state width="1493" height="89" key="GridCell.Tab.0.bottom" timestamp="1605864919116">
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1606627888052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
-    <state width="1493" height="89" key="GridCell.Tab.0.center" timestamp="1605864919116">
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
+    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1606627888052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
-    <state width="1493" height="89" key="GridCell.Tab.0.left" timestamp="1605864919116">
+    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
+    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1606627888052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
-    <state width="1493" height="89" key="GridCell.Tab.0.right" timestamp="1605864919116">
+    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
+    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1606627888052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
-    <state width="1493" height="89" key="GridCell.Tab.1.bottom" timestamp="1605864919116">
+    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
+    <state width="1493" height="163" key="GridCell.Tab.1.bottom" timestamp="1606627888052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
-    <state width="1493" height="89" key="GridCell.Tab.1.center" timestamp="1605864919116">
+    <state width="1493" height="163" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
+    <state width="1493" height="163" key="GridCell.Tab.1.center" timestamp="1606627888052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
-    <state width="1493" height="89" key="GridCell.Tab.1.left" timestamp="1605864919116">
+    <state width="1493" height="163" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
+    <state width="1493" height="163" key="GridCell.Tab.1.left" timestamp="1606627888052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
-    <state width="1493" height="89" key="GridCell.Tab.1.right" timestamp="1605864919116">
+    <state width="1493" height="163" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
+    <state width="1493" height="163" key="GridCell.Tab.1.right" timestamp="1606627888052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="89" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605864919116" />
+    <state width="1493" height="163" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
     <state x="518" y="125" key="RollbackChangesDialog" timestamp="1605274040431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
