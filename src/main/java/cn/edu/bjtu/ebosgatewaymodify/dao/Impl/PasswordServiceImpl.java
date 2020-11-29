@@ -2,10 +2,12 @@ package cn.edu.bjtu.ebosgatewaymodify.dao.Impl;
 
 import cn.edu.bjtu.ebosgatewaymodify.dao.PasswordService;
 import cn.edu.bjtu.ebosgatewaymodify.entity.Password;
+import com.mongodb.client.result.UpdateResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -15,23 +17,31 @@ public class PasswordServiceImpl implements PasswordService {
     MongoTemplate mongoTemplate;
 
     @Override
-    public void save(String username, String password) {
-        Password passwd = new Password();
-        passwd.setUsername(username);
-        passwd.setPassword(password);
-        mongoTemplate.save(passwd);
+    public String modify(String username, String password) {
+        Query query = new Query(Criteria.where("_id").is(username));
+        Update update = new Update();
+        update.set("password",password);
+        UpdateResult result = mongoTemplate.upsert(query,update,Password.class,"password");
+        long count = result.getModifiedCount();
+        if (count > 0){
+            return "修改成功！";
+        }
+        return "修改失败！";
+    }
+
+    @Override
+    public Boolean login(String username, String password) {
+        boolean flag = false;
+        Password passwd = mongoTemplate.findById(username, Password.class,"password");
+        assert passwd != null;
+        if (passwd.getPassword().equals(password)){
+            flag = true;
+        }
+        return flag;
     }
 
     @Override
     public Password find(String username) {
-        Query query = Query.query(Criteria.where("username").is(username));
-        Password result = mongoTemplate.findOne(query,Password.class,"password");
-        return result;
-    }
-
-    @Override
-    public void delete(String username) {
-        Query query = Query.query(Criteria.where("username").is(username));
-        mongoTemplate.remove(query,Password.class,"password");
+        return mongoTemplate.findById(username, Password.class,"password");
     }
 }

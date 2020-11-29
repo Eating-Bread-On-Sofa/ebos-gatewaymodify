@@ -11,7 +11,6 @@ public class EbosGatewayModifyApplication {
 
     public static void main(String[] args){
         SpringApplication.run(EbosGatewayModifyApplication.class, args);
-
     }
 
     @Bean
