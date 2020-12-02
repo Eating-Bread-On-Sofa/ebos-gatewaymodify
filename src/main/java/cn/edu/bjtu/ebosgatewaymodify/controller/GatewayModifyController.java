@@ -5,6 +5,7 @@ import cn.edu.bjtu.ebosgatewaymodify.dao.PasswordService;
 import cn.edu.bjtu.ebosgatewaymodify.entity.IpAddress;
 import cn.edu.bjtu.ebosgatewaymodify.entity.Password;
 import cn.edu.bjtu.ebosgatewaymodify.service.JudgeIp;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -113,16 +114,25 @@ public class GatewayModifyController {
 
     @CrossOrigin
     @PostMapping("/login")
-    public String login(String username,String password){
+    public JSONObject login(String username, String password){
+
         Password data = passwordService.find(username);
+        JSONObject js = new JSONObject();
+
         if (data == null){
-            return "此用户不存在！";
+            js.put("status",401.1);
+            js.put("message","请输入用户名和密码！");
+            return js;
         }
         boolean flag = passwordService.login(username,password);
         if(flag){
-            return "登录成功！";
+            js.put("status",200);
+            js.put("message","登录成功！");
+            return js;
         }else {
-            return "密码有误，登录失败！";
+            js.put("status",401.1);
+            js.put("message","密码有误，登录失败！");
+            return js;
         }
     }
 
