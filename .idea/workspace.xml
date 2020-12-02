@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6cae0392-29f7-49e9-8e49-89bc22dee756" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell file/password.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/EbosGatewayModifyApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/Impl/PasswordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/Impl/PasswordServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/PasswordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/dao/PasswordService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +172,7 @@
         <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main1" />
         <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main" />
         <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.checkSameSegment6" />
-        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.checkSameSegment6" />
+        <item itemvalue="JUnit.EbosGatewayModifyApplicationTests.main2" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +202,9 @@
       <workItem from="1606396136698" duration="56000" />
       <workItem from="1606549488711" duration="14000" />
       <workItem from="1606621823666" duration="4824000" />
+      <workItem from="1606735731413" duration="6000" />
+      <workItem from="1606807295340" duration="573000" />
+      <workItem from="1606883102325" duration="2793000" />
     </task>
     <task id="LOCAL-00001" summary="commit shell file">
       <created>1605241788823</created>
@@ -250,30 +249,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="851" y="352" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1605161416094" />
-    <state x="370" y="10" key="CommitChangelistDialog2" timestamp="1605865483396">
+    <state x="572" y="6" key="CommitChangelistDialog2" timestamp="1606896230770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="370" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605865483396" />
+    <state x="572" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1606896230770" />
     <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1604827726112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604827726112" />
-    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1606627888052">
+    <state width="1106" height="140" key="GridCell.Tab.0.bottom" timestamp="1606889701104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
-    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1606627888052">
+    <state width="1106" height="140" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606889701104" />
+    <state width="1106" height="140" key="GridCell.Tab.0.center" timestamp="1606889701104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
-    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1606627888052">
+    <state width="1106" height="140" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606889701104" />
+    <state width="1106" height="140" key="GridCell.Tab.0.left" timestamp="1606889701104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
-    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1606627888052">
+    <state width="1106" height="140" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606889701104" />
+    <state width="1106" height="140" key="GridCell.Tab.0.right" timestamp="1606889701104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606627888052" />
+    <state width="1106" height="140" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606889701104" />
     <state width="1493" height="163" key="GridCell.Tab.1.bottom" timestamp="1606627888052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
