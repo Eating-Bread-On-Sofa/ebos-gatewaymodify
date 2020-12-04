@@ -24,22 +24,34 @@ public class GatewayModifyController {
 
     @CrossOrigin
     @PostMapping("/ipv4")
-    public String update(String name,String ip,String netmask,String gateway,String dns) throws IOException, InterruptedException {
+    public JSONObject update(String name,String ip,String netmask,String gateway,String dns) throws IOException, InterruptedException {
+
+        JSONObject js = new JSONObject();
         if (!judgeIp.ipCheck(ip)){
-            return "ipv4地址输入不规范，请重新输入！";
+            js.put("status",401);
+            js.put("message","ipv4地址输入不规范，请重新输入！");
+            return js;
         }
         if (!judgeIp.ipCheck(gateway)){
-            return "网关地址输入不规范，请重新输入！";
+            js.put("status",401);
+            js.put("message","网关地址输入不规范，请重新输入！");
+            return js;
         }
         if (!judgeIp.ipCheck(dns)){
-            return "DNS地址输入不规范，请重新输入！";
+            js.put("status",401);
+            js.put("message","DNS地址输入不规范，请重新输入！");
+            return js;
         }
         String mask = judgeIp.getMask(netmask);
         if (!judgeIp.checkMask(mask)){
-            return "子网掩码输入不规范，请重新输入！";
+            js.put("status",401);
+            js.put("message","子网掩码输入不规范，请重新输入！");
+            return js;
         }
         if (!judgeIp.checkSameSegment(ip,gateway,netmask)){
-            return "ip地址和网关不匹配，请重新输入！";
+            js.put("status",401);
+            js.put("message","ip地址和网关不匹配，请重新输入！");
+            return js;
         }
 
         IpAddress data = ipAddressService.find(name);
@@ -61,24 +73,33 @@ public class GatewayModifyController {
         Process process = Runtime.getRuntime().exec(cmdArray);
         process.waitFor();
         System.out.println("修改完成！");
-        return "修改成功！";
+        js.put("status",200);
+        js.put("message","修改成功！");
+        return js;
     }
 
     @CrossOrigin
     @PostMapping("/ipv6")
-    public String update6(String name,String ip,String gateway) throws IOException, InterruptedException {
+    public JSONObject update6(String name,String ip,String gateway) throws IOException, InterruptedException {
 
+        JSONObject js = new JSONObject();
         String[] ipv6s = ip.split("/");
         String ipv6 = ipv6s[0];
         int num = Integer.parseInt(ipv6s[ipv6s.length-1]);
         if (!judgeIp.isValidIpv6Addr(ipv6)){
-            return "ipv6地址输入不规范，请重新输入！";
+            js.put("status",401);
+            js.put("message","ipv6地址输入不规范，请重新输入！");
+            return js;
         }
         if (!judgeIp.isValidIpv6Addr(gateway)){
-            return "网关地址输入不规范，请重新输入！";
+            js.put("status",401);
+            js.put("message","网关地址输入不规范，请重新输入！");
+            return js;
         }
         if (!judgeIp.checkSameSegment6(ipv6,gateway,num)){
-            return "ip地址和网关不匹配，请重新输入！";
+            js.put("status",401);
+            js.put("message","ip地址和网关不匹配，请重新输入！");
+            return js;
         }
 
         IpAddress data = ipAddressService.find(name);
@@ -93,23 +114,32 @@ public class GatewayModifyController {
         Process process = Runtime.getRuntime().exec(cmdArray);
         process.waitFor();
         System.out.println("修改完成！");
-        return "修改成功！";
+        js.put("status",200);
+        js.put("message","修改成功！");
+        return js;
     }
 
     @CrossOrigin
     @PostMapping("/password")
-    public String password(String username,String oldPassword, String newPassword){
+    public JSONObject password(String username,String oldPassword, String newPassword){
 
+        JSONObject js = new JSONObject();
         Password data = passwordService.find(username);
         if (data == null){
-            return "此用户不存在！";
+            js.put("status",401);
+            js.put("message","此用户不存在！");
+            return js;
         }
 
         if(!oldPassword.equals(data.getPassword())){
-            return "原密码输入有误，请重新输入！";
+            js.put("status",401);
+            js.put("message","原密码输入有误，请重新输入！");
+            return js;
         }else {
             System.out.println("修改完成！");
-            return passwordService.modify(data.getUsername(),newPassword);
+            js.put("status",200);
+            js.put("message",passwordService.modify(data.getUsername(),newPassword));
+            return js;
         }
     }
 
@@ -121,7 +151,7 @@ public class GatewayModifyController {
         JSONObject js = new JSONObject();
 
         if (data == null){
-            js.put("status",401.1);
+            js.put("status",401);
             js.put("message","请输入用户名和密码！");
             return js;
         }
@@ -131,7 +161,7 @@ public class GatewayModifyController {
             js.put("message","登录成功！");
             return js;
         }else {
-            js.put("status",401.1);
+            js.put("status",401);
             js.put("message","密码有误，登录失败！");
             return js;
         }
