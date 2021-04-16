@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cae0392-29f7-49e9-8e49-89bc22dee756" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/bjtu/ebosgatewaymodify/controller/GatewayModifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell file/ipv4update.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shell file/ipv4update.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell file/ipv6update.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shell file/ipv6update.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
